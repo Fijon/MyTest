@@ -127,6 +127,7 @@ public class CyclicBarrierTest {
 			Random rand = new Random();
 			int ranInt = rand.nextInt(3);
 			System.out.println( Thread.currentThread().getName() + " ======= " + ranInt);
+			
 			return ranInt %2 != 0 ? null:Thread.currentThread().getName();
 		}
 	}
